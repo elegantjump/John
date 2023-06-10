@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 /*-----------------HEader-----------------------*/
 .headerimg{
     width: 30px;
@@ -8,6 +12,44 @@ padding-right: 18px;
 padding-top: 20px;
 text-align: right;
 }
+
+@media screen and (max-width: 1019px) {
+    .navigation{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 1020px) {
+    .headerimg{
+        display: none;
+    }
+    .header{
+        padding-top: 30px;
+        padding-right: 60px;
+    }
+  }
+
+.header_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.nav-link{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+
+    color: #000000;
+}
+
 /*-------------------------Hero------------------------*/
 .hero{
     display: flex;
@@ -61,9 +103,73 @@ border-radius: 2px;
 color: #FFFFFF;
 border: 0px;
 cursor: pointer;
+display: block;
+margin: 0 auto;
 }
 .heroimg{
     width: 170.86px;
 height: 170.86px;
 margin-bottom: 34px;
 }
+
+@media screen and (min-width: 1020px) {
+    .hero{
+        flex-direction: row-reverse;
+        justify-content: start;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 158px;
+    }
+
+    .left-cont{
+        margin-right: 106px;
+    }
+
+    .heroh1{
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 60px;
+        /* or 136% */
+
+        width: 440px;
+        height: 105px;
+        
+        /* Dark Color */
+
+        color: #21243D;
+
+        text-align: start;
+
+        margin-bottom: 40px;
+    }
+
+    .herop{
+        width: 497px;
+        height: 66px;
+
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        /* Dark Color */
+
+        color: #21243D;
+
+        text-align: start;
+
+        margin-bottom: 47px;
+    }
+
+    .heroimg{
+        width: 243px;
+        height: 243px;
+    }
+
+    .herobtn{
+        margin: 0;
+    }
+  }
